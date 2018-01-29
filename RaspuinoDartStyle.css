@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 1024px;
+  height: 100%;
+  margin: auto;
+  padding: 10px;
+  background-color: #eee;
+/*  font-family: Verdana, Geneva, sans-serif;*/
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 14px;
+}
+
+#welcomediv, #matchrequestdiv, #addplayerdiv, #messagediv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  padding: 25px;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  background-color: #80bfff;
+  text-align: center;
+  vertical-align: middle;
+  border: 2px solid #666;
+}
+
+#matchdiv {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;;
+  margin: 0;
+  padding: 25px;
+  border-radius: 25px;
+  background-color: #80bfff;
+  text-align: center;
+  vertical-align: middle;
+  border: 2px solid #666;
+}
+
+#matchrequestdiv, #addplayerdiv, #matchdiv, #messagediv {
+  display: none;
+}
+
+#matchrequestdiv select {
+  width: 100%;
+  font-size: 1em;
+}
+
+#addplayerdiv input {
+  width: 100%;
+  font-size: 1em;
+}
+
+#matchwrapdiv {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+#matchheaddiv {
+  flex: 0 1 auto;
+}
+
+#matchtablediv {
+  flex: 1 1 auto;
+  padding: 10px;
+  overflow: scroll;
+  background-color: #b3d9ff;
+  border: 1px solid #666;
+}
+
+#matchfootdiv {
+  flex: 0 1 auto;
+}
+
+#matchtablediv table {
+  width: 100%;
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-variant: small-caps;
+}
+
+#matchtablediv table td {
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+#messagediv {
+  min-width: 480px;
+  min-height: 320px;
+  background-color: #ccc;
+}
+
+#messagediv #messagetitle {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+#messagediv #messagetext {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+#messagediv #messagesilent {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#boarddiv {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  margin: 0;
+  padding: 5px;
+  border-radius: 25px;
+  background-color: #ccc;
+  text-align: center;
+  vertical-align: middle;
+  border: 2px solid #666;
+  display: none;
+  display: block;
+}
+
+#boarddiv canvas {
+  cursor: pointer;
+}
+
+#debugdiv {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  transform: translate(-50%, 0);
+  background-color: #ddd;
+  text-align: center;
+  vertical-align: middle;
+  border: 2px solid #bbb;
+  font-size: .75em;
+  display: none;
+}
+
+#debugtable td {
+  cursor: pointer;
+  text-align: center;
+}
+
+button {
+  background-color: #3399ff;
+  border: 1px solid #666;
+  border-radius: 5px;
+  /*  font-family: Verdana, Geneva, sans-serif;*/
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #b3d9ff;
+}
+
+button:active {
+  background-color: #4da6ff;
+}

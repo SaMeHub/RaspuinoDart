@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="RaspuinoDartScript.js"></script>
+    <link rel="stylesheet" type="text/css" href="RaspuinoDartStyle.css">
+    <title>RaspuinoDart</title>
+  </head>
+  <body>
+    <div id="welcomediv">
+      <h1>RaspuinoDart</h1>
+      <p>version 0.1 &copy; Sascha Mehlhase</p>
+      <p><button id="matchrequest" type="button">Prepare match!</button></p>
+      <p><button id="addrequest" type="button">Add player</button></p>
+    </div>
+    <div id="matchrequestdiv">
+      <h1>RaspuinoDart</h1>
+      <h2>Start a match</h2>
+      <p>What type of match do you wanna start?</p>
+      <p><select id="reqmatchtype"></select></p>
+      <p>Which players should join this match?</p>
+      <p><select id="reqplayers" multiple="multiple" size="10"></select></p>
+      <p><button id="matchrequest2" type="button">Start match!</button>
+      <button type="button">Back</button></p>
+    </div>
+    <div id="addplayerdiv">
+      <h1>RaspuinoDart</h1>
+      <h2>Add a player</h2>
+      <p>What's the name of the new player?</p>
+      <p><input id="addname" type="text" /></p>
+      <p><button id="addrequest2" type="button">Add player!</button>
+      <button type="button">Back</button></p>
+    </div>
+    <div id="matchdiv">
+    <div id="matchwrapdiv">
+      <div id="matchheaddiv">
+        <h1>RaspuinoDart</h1>
+        <h2 id="matchtitle"></h2>
+        <p id="nextup"></p>
+      </div>
+      <div id="matchtablediv">
+        <table id="matchtable">
+          <thead>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+      <div id="matchfootdiv">
+        <p><button id="undo" type="button">Undo dart</button> <button id="endmatch" type="button">End match</button></p>
+      </div>
+      </div>
+    </div>
+    <div id="messagediv">
+      <p id="messagetitle"></p>
+      <p id="messagetext"></p>
+      <p id="messagesilent"></p>
+    </div>
+    <div id="boarddiv">
+      <canvas id="boardcanvas" width="550" height="550">Your browser does not support the HTML5 canvas tag.</canvas>
+      <!--<script type="text/javascript" src="RaspuinoCanvas.js"></script>-->
+    </div>
+    <div id="debugdiv">
+      <table id="debugtable">
+        <tbody>
+          <tr>
+            <td>D01</td>
+            <td>D02</td>
+            <td>D03</td>
+            <td>D04</td>
+            <td>D05</td>
+            <td>D06</td>
+            <td>D07</td>
+            <td>D08</td>
+            <td>D09</td>
+            <td>D10</td>
+            <td>D11</td>
+            <td>D12</td>
+            <td>D13</td>
+            <td>D14</td>
+            <td>D15</td>
+            <td>D16</td>
+            <td>D17</td>
+            <td>D18</td>
+            <td>D19</td>
+            <td>D20</td>
+            <td rowspan="2">DBE</td>
+            <td rowspan="4">XXX</td>
+          </tr>
+          <tr>
+            <td>o01</td>
+            <td>o02</td>
+            <td>o03</td>
+            <td>o04</td>
+            <td>o05</td>
+            <td>o06</td>
+            <td>o07</td>
+            <td>o08</td>
+            <td>o09</td>
+            <td>o10</td>
+            <td>o11</td>
+            <td>o12</td>
+            <td>o13</td>
+            <td>o14</td>
+            <td>o15</td>
+            <td>o16</td>
+            <td>o17</td>
+            <td>o18</td>
+            <td>o19</td>
+            <td>o20</td>
+          </tr>
+          <tr>
+            <td>T01</td>
+            <td>T02</td>
+            <td>T03</td>
+            <td>T04</td>
+            <td>T05</td>
+            <td>T06</td>
+            <td>T07</td>
+            <td>T08</td>
+            <td>T09</td>
+            <td>T10</td>
+            <td>T11</td>
+            <td>T12</td>
+            <td>T13</td>
+            <td>T14</td>
+            <td>T15</td>
+            <td>T16</td>
+            <td>T17</td>
+            <td>T18</td>
+            <td>T19</td>
+            <td>T20</td>
+            <td rowspan="2">BE</td>
+          </tr>
+          <tr>
+            <td>i01</td>
+            <td>i02</td>
+            <td>i03</td>
+            <td>i04</td>
+            <td>i05</td>
+            <td>i06</td>
+            <td>i07</td>
+            <td>i08</td>
+            <td>i09</td>
+            <td>i10</td>
+            <td>i11</td>
+            <td>i12</td>
+            <td>i13</td>
+            <td>i14</td>
+            <td>i15</td>
+            <td>i16</td>
+            <td>i17</td>
+            <td>i18</td>
+            <td>i19</td>
+            <td>i20</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
+
